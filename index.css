@@ -1,0 +1,122 @@
+html {
+	height: 100% !important;
+	width: 100% !important;
+	margin: 0;
+	position: fixed;
+	font-family: helvetica;
+	background: white;
+	color: black;
+}
+
+body {
+	margin: 0;
+	-webkit-user-select: none !important;
+	/* Disable double-click-to-zoom */
+	touch-action: manipulation;
+}
+
+button {
+	border: 1px solid black;
+	-webkit-appearance: none;
+	font-size: 36pt;
+	z-index: 50;
+	color: black;
+	-webkit-user-select: none !important;
+	background: white;
+}
+
+midi-player {
+	margin-bottom: 32px;
+}
+
+button.generateBtn {
+	width: 100%;
+	padding: 24px;
+	margin-bottom: 24px;
+	border: 1px solid #ccc;
+	border-left: none;
+	border-right: none;
+	transition: box-shadow .3s;
+	box-shadow: none;
+}
+
+button.generateBtn:hover {
+	box-shadow: 0 0 5px 5px #ccc;
+}
+
+button.play {
+	user-select: none;
+}
+
+div#recordingContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 48px;
+}
+
+button#recordButton {
+	background: #eb4d4b;
+	border: none;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	transition: box-shadow .3s;
+}
+
+button#recordButton:hover {
+	box-shadow: 0 0 3px 3px #eb4d4b;
+}
+
+.green:hover {
+	box-shadow: 0 0 3px 3px green !important;
+}
+
+.red:hover {
+	box-shadow: 0 0 3px 3px #eb4d4b;
+}
+
+div.playerContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 48px;
+	width: 100vw;
+}
+
+div.playerContainer > div {
+	cursor: pointer;
+	border-radius:10px;
+	border: 1px solid #ccc;
+	padding: 24px;
+	transition: box-shadow .3s;
+	width: 25vw !important;
+}
+
+div.playerContainer > div:hover {
+	box-shadow: 0 0 5px 5px #6ab04c;
+}
+
+div.playerContainer > div.selected {
+	box-shadow: 0 0 15px 15px #6ab04c;
+}
+
+div.container {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1px;
+	border: none;
+	align-items: center;
+	height: 200vh;
+	background: white;
+}
+
+div.header {
+	padding: 24px;
+	background: white;
+	color: black;
+	font-family: Helvetica;
+	font-size: 50px;
+}
